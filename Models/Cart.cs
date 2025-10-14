@@ -13,13 +13,10 @@
     {
         public int Id { get; set; }
         public int CartId { get; set; }
-
         public Cart? Cart { get; set; }
-
-        public string Sku { get; set; }
-
+        public string Sku { get; set; } = default!;
+        public string Name { get; set; } = default!;
         public decimal UnitPrice { get; set; }
         public int Quantity { get; set; }
-
     } 
 }
