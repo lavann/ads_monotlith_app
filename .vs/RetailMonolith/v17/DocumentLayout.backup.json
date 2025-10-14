@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\git\\ads_monotlith_app\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{003FDCFA-9AE2-EC08-EA3B-0EB1B3EC29E4}|RetailMonolith.csproj|c:\\git\\ads_monotlith_app\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{003FDCFA-9AE2-EC08-EA3B-0EB1B3EC29E4}|RetailMonolith.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{003FDCFA-9AE2-EC08-EA3B-0EB1B3EC29E4}|RetailMonolith.csproj|c:\\git\\ads_monotlith_app\\services\\checkoutservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{003FDCFA-9AE2-EC08-EA3B-0EB1B3EC29E4}|RetailMonolith.csproj|solutionrelative:services\\checkoutservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{003FDCFA-9AE2-EC08-EA3B-0EB1B3EC29E4}|RetailMonolith.csproj|c:\\git\\ads_monotlith_app\\models\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{003FDCFA-9AE2-EC08-EA3B-0EB1B3EC29E4}|RetailMonolith.csproj|solutionrelative:models\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{003FDCFA-9AE2-EC08-EA3B-0EB1B3EC29E4}|RetailMonolith.csproj|c:\\git\\ads_monotlith_app\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{003FDCFA-9AE2-EC08-EA3B-0EB1B3EC29E4}|RetailMonolith.csproj|solutionrelative:models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{003FDCFA-9AE2-EC08-EA3B-0EB1B3EC29E4}|RetailMonolith.csproj|c:\\git\\ads_monotlith_app\\services\\icheckoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,20 +31,8 @@
       "RelativeMoniker": "D:0:0:{003FDCFA-9AE2-EC08-EA3B-0EB1B3EC29E4}|RetailMonolith.csproj|solutionrelative:services\\ipaymentgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{003FDCFA-9AE2-EC08-EA3B-0EB1B3EC29E4}|RetailMonolith.csproj|c:\\git\\ads_monotlith_app\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{003FDCFA-9AE2-EC08-EA3B-0EB1B3EC29E4}|RetailMonolith.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{003FDCFA-9AE2-EC08-EA3B-0EB1B3EC29E4}|RetailMonolith.csproj|c:\\git\\ads_monotlith_app\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{003FDCFA-9AE2-EC08-EA3B-0EB1B3EC29E4}|RetailMonolith.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{003FDCFA-9AE2-EC08-EA3B-0EB1B3EC29E4}|RetailMonolith.csproj|c:\\git\\ads_monotlith_app\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{003FDCFA-9AE2-EC08-EA3B-0EB1B3EC29E4}|RetailMonolith.csproj|solutionrelative:models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{003FDCFA-9AE2-EC08-EA3B-0EB1B3EC29E4}|RetailMonolith.csproj|c:\\git\\ads_monotlith_app\\models\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{003FDCFA-9AE2-EC08-EA3B-0EB1B3EC29E4}|RetailMonolith.csproj|solutionrelative:models\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{003FDCFA-9AE2-EC08-EA3B-0EB1B3EC29E4}|RetailMonolith.csproj|c:\\git\\ads_monotlith_app\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,29 +46,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CheckoutService .cs",
               "DocumentMoniker": "C:\\git\\ads_monotlith_app\\Services\\CheckoutService .cs",
               "RelativeDocumentMoniker": "Services\\CheckoutService .cs",
-              "ToolTip": "C:\\git\\ads_monotlith_app\\Services\\CheckoutService .cs*",
-              "RelativeToolTip": "Services\\CheckoutService .cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\git\\ads_monotlith_app\\Services\\CheckoutService .cs",
+              "RelativeToolTip": "Services\\CheckoutService .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-14T12:58:59.795Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ICheckoutService.cs",
               "DocumentMoniker": "C:\\git\\ads_monotlith_app\\Services\\ICheckoutService.cs",
               "RelativeDocumentMoniker": "Services\\ICheckoutService.cs",
-              "ToolTip": "C:\\git\\ads_monotlith_app\\Services\\ICheckoutService.cs*",
-              "RelativeToolTip": "Services\\ICheckoutService.cs*",
+              "ToolTip": "C:\\git\\ads_monotlith_app\\Services\\ICheckoutService.cs",
+              "RelativeToolTip": "Services\\ICheckoutService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-14T12:58:24.014Z",
@@ -76,7 +76,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\git\\ads_monotlith_app\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "Models\\Cart.cs",
+              "ToolTip": "C:\\git\\ads_monotlith_app\\Models\\Cart.cs",
+              "RelativeToolTip": "Models\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T12:24:00.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "InventoryItem.cs",
+              "DocumentMoniker": "C:\\git\\ads_monotlith_app\\Models\\InventoryItem.cs",
+              "RelativeDocumentMoniker": "Models\\InventoryItem.cs",
+              "ToolTip": "C:\\git\\ads_monotlith_app\\Models\\InventoryItem.cs",
+              "RelativeToolTip": "Models\\InventoryItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T12:23:38.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\git\\ads_monotlith_app\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\git\\ads_monotlith_app\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T12:43:49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MockPaymentGateway.cs",
               "DocumentMoniker": "C:\\git\\ads_monotlith_app\\Services\\MockPaymentGateway.cs",
               "RelativeDocumentMoniker": "Services\\MockPaymentGateway.cs",
@@ -89,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "IPaymentGateway.cs",
               "DocumentMoniker": "C:\\git\\ads_monotlith_app\\Services\\IPaymentGateway.cs",
               "RelativeDocumentMoniker": "Services\\IPaymentGateway.cs",
@@ -102,20 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\git\\ads_monotlith_app\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\git\\ads_monotlith_app\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAwwDAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T12:43:49Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\git\\ads_monotlith_app\\Models\\Order.cs",
               "RelativeDocumentMoniker": "Models\\Order.cs",
@@ -125,30 +151,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-14T12:24:09.952Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "C:\\git\\ads_monotlith_app\\Models\\Cart.cs",
-              "RelativeDocumentMoniker": "Models\\Cart.cs",
-              "ToolTip": "C:\\git\\ads_monotlith_app\\Models\\Cart.cs",
-              "RelativeToolTip": "Models\\Cart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T12:24:00.271Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "InventoryItem.cs",
-              "DocumentMoniker": "C:\\git\\ads_monotlith_app\\Models\\InventoryItem.cs",
-              "RelativeDocumentMoniker": "Models\\InventoryItem.cs",
-              "ToolTip": "C:\\git\\ads_monotlith_app\\Models\\InventoryItem.cs",
-              "RelativeToolTip": "Models\\InventoryItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T12:23:38.387Z"
             },
             {
               "$type": "Document",

@@ -11,14 +11,14 @@ namespace RetailMonolith.Data
         }
 
         public DbSet<Product> Products => Set<Product>();
-        public DbSet<InventoryItem> InventoryItems => Set<InventoryItem>();
+        public DbSet<InventoryItem> Inventory => Set<InventoryItem>();
         public DbSet<Cart> Carts => Set<Cart>();
         public DbSet<CartLine> CartLines => Set<CartLine>();
 
         public DbSet<Order> Orders => Set<Order>();
         public DbSet<OrderLine> OrderLines => Set<OrderLine>();
 
-        DbSet<InventoryItem> Inventory => Set<InventoryItem>();
+      
 
 
         protected override void OnModelCreating(ModelBuilder b)
