@@ -39,6 +39,7 @@ ScaffoldingReadMe.txt
 # Others
 ~$*
 *~
+*.vsidx
 CodeCoverage/
 
 # MSBuild Binary and Structured Log
