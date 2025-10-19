@@ -5,6 +5,11 @@ namespace RetailMonolith.Data
 {
     public class DesignTimeDbContextFactory: IDesignTimeDbContextFactory<AppDbContext>
     {
+        /// <summary>
+        ///   
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
         public AppDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
