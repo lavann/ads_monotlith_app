@@ -33,9 +33,9 @@ namespace RetailMonolith.Data
             {
                 var items = new[]
                 {
-                new Product { Sku="SKU-1001", Name="Classic Tee", Price=19.99m, Category="Apparel" },
-                new Product { Sku="SKU-2001", Name="Sneakers", Price=59.99m, Category="Footwear" },
-                new Product { Sku="SKU-3001", Name="Backpack", Price=39.99m, Category="Accessories" },
+                new Product { Sku="SKU-1001", Name="Classic Tee", Price=19.99m, Category="Apparel", Currency="Stirling" },
+                new Product { Sku="SKU-2001", Name="Sneakers", Price=59.99m, Category="Footwear",Currency="Stirling" },
+                new Product { Sku="SKU-3001", Name="Backpack", Price=39.99m, Category="Accessories",Currency="Stirling" },
             };
                 await db.Products.AddRangeAsync(items);
                 await db.Inventory.AddRangeAsync(items.Select(p => new InventoryItem { Sku = p.Sku, Quantity = 100 }));
