@@ -31,14 +31,31 @@ namespace RetailMonolith.Data
         {
             if (!await db.Products.AnyAsync())
             {
-                var items = new[]
+
+                var random = new Random();
+                var categories = new[] { "Apparel", "Footwear", "Accessories", "Electronics", "Home", "Beauty" };
+                var currency = "GBP"; // use GBP instead of “Stirling”
+
+                var items = Enumerable.Range(1, 50).Select(i =>
                 {
-                new Product { Sku="SKU-1001", Name="Classic Tee", Price=19.99m, Category="Apparel", Currency="Stirling" },
-                new Product { Sku="SKU-2001", Name="Sneakers", Price=59.99m, Category="Footwear",Currency="Stirling" },
-                new Product { Sku="SKU-3001", Name="Backpack", Price=39.99m, Category="Accessories",Currency="Stirling" },
-            };
+                    var category = categories[random.Next(categories.Length)];
+                    var price = Math.Round((decimal)(random.NextDouble() * 100 + 5), 2); // £5–£105
+
+                    return new Product
+                    {
+                        Sku = $"SKU-{i:0000}",
+                        Name = $"{category} Item {i}",
+                        Description = $"Sample description for {category} Item {i}.",
+                        Price = price,
+                        Currency = currency,
+                        IsActive = true,
+                        Category = category
+                    };
+                }).ToList();
+
+
                 await db.Products.AddRangeAsync(items);
-                await db.Inventory.AddRangeAsync(items.Select(p => new InventoryItem { Sku = p.Sku, Quantity = 100 }));
+                await db.Inventory.AddRangeAsync(items.Select(p => new InventoryItem { Sku = p.Sku, Quantity = random.Next(10,200) }));
                 await db.SaveChangesAsync();
             }
         }
