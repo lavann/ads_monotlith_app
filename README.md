@@ -5,7 +5,7 @@ It includes product listing, shopping cart, checkout, and inventory management —
 
 ---
 
-## ?? Features
+## Features
 
 - ASP.NET Core 8 (Razor Pages)
 - Entity Framework Core (SQL Server LocalDB)
@@ -20,9 +20,9 @@ It includes product listing, shopping cart, checkout, and inventory management —
 
 ---
 
-## ??? Project Setup
+## Project Setup
 
-### 1?? Clone the repository
+### 1? Clone the repository
 
 
 git clone https://github.com/lavann/ads_monotlith_app.git
@@ -34,14 +34,14 @@ cd ads_monotlith_app
 SQL Server LocalDB (comes with Visual Studio) or any SQL Server instance
 Ensure you have SQL Server LocalDB installed (comes with Visual Studio) or have access to any SQL Server instance.
 
-### 3?? Restore dependencies
+### 3? Restore dependencies
 dotnet restore
 
-### 4?? Update the database
+### 4? Update the database
 This project uses Entity Framework Core with a design-time factory for migrations.
 
 
-## ?? Database & Migrations
+##  Database & Migrations
 
 ### Apply existing migrations
 dotnet ef database update
