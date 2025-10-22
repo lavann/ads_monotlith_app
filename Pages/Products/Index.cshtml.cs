@@ -1,8 +1,10 @@
+using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RetailMonolith.Data;
 using RetailMonolith.Models;
+using RetailMonolith.Services;
 using System.Threading.Tasks;
 
 namespace RetailMonolith.Pages.Products
@@ -10,19 +12,21 @@ namespace RetailMonolith.Pages.Products
     public class IndexModel : PageModel
     {
         private readonly AppDbContext _db;
-        public IndexModel(AppDbContext db)
+        private readonly ICartService _cartService;
+        public IndexModel(AppDbContext db, ICartService cartService)
         {
             _db = db;
+            _cartService = cartService;
         }
 
         public IList<Product> Products { get; set; } = new List<Product>();
 
         public async Task OnGetAsync() => Products = await _db.Products.Where(p => p.IsActive).ToListAsync();
 
-        public async Task OnPostAsync(int id)
+        public async Task OnPostAsync(int productId)
         {
             // Add to cart logic will go here in the future
-            var p = await _db.Products.FindAsync(id);
+            var p = await _db.Products.FindAsync(productId);
             if (p is null) return;
 
             var cart = await _db.Carts
@@ -42,7 +46,7 @@ namespace RetailMonolith.Pages.Products
                 UnitPrice = p.Price,
                 Quantity = 1
             });
-            await _db.SaveChangesAsync();
+            await _cartService.AddToCartAsync("guest", productId);
             Response.Redirect("/Cart");
         }
     }

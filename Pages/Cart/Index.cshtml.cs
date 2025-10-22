@@ -2,14 +2,20 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RetailMonolith.Data;
+using RetailMonolith.Services;
 
 namespace RetailMonolith.Pages.Cart
 {
     public class IndexModel : PageModel
     {
        
-        private readonly AppDbContext _context;
-        public IndexModel(AppDbContext context) => _context = context;
+      
+        private readonly ICartService _cartService;
+       
+        public IndexModel(ICartService cartService)
+        {
+            _cartService = cartService;
+        }
 
 
 
@@ -21,6 +27,13 @@ namespace RetailMonolith.Pages.Cart
         public decimal Total => Lines.Sum(line => line.Price * line.Quantity);
 
 
+        public async Task OnGetAsync()
+        {
+            var cart = await _cartService.GetCartWithLinesAsync("guest");
+            Lines = cart.Lines
+                .Select(line => (line.Name, line.Quantity, line.UnitPrice))
+                .ToList();
+        }
 
 
     }

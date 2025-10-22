@@ -15,6 +15,7 @@ builder.Services.AddDbContext<AppDbContext>(o =>
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<IPaymentGateway, MockPaymentGateway>();
 builder.Services.AddScoped<ICheckoutService, CheckoutService>();
+builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddHealthChecks();
 
 var app = builder.Build();
