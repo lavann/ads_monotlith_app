@@ -25,22 +25,22 @@ It includes product listing, shopping cart, checkout, and inventory management �
 ---
 
 ## 🏠 Home Page
-![Home Page Screenshot](images/HomePage.jpg)
+![Home Page Screenshot](https://github.com/lavann/ads_monotlith_app/blob/main/Images/HomePage.jpg)
 
 ## 🛍 Products
-![Products Screenshot](images/Products.jpg)
+![Products Screenshot](https://github.com/lavann/ads_monotlith_app/blob/main/Images/Products.jpg)
 
 ## 🧺 Cart
-![Cart Screenshot](images/Cart.jpg)
+![Cart Screenshot](https://github.com/lavann/ads_monotlith_app/blob/main/Images/Cart.jpg)
 
 ## 💳 Checkout
-![Checkout Screenshot](images/Checkout.jpg)
+![Checkout Screenshot](https://github.com/lavann/ads_monotlith_app/blob/main/Images/Checkout.jpg)
 
 ## 📦 Orders
-![Orders Screenshot](images/Orders.jpg)
+![Orders Screenshot](https://github.com/lavann/ads_monotlith_app/blob/main/Images/Orders.jpg)
 
 ## 📦 Order Details
-![Orders Screenshot](images/OrderDetails.jpg)
+![Orders Screenshot](https://github.com/lavann/ads_monotlith_app/blob/main/Images/OrderDetails.jpg)
 
 ---
 
