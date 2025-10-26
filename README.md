@@ -24,6 +24,26 @@ It includes product listing, shopping cart, checkout, and inventory management �
 
 ---
 
+## 🏠 Home Page
+![Home Page Screenshot](images/HomePage.jpg)
+
+## 🛍 Products
+![Products Screenshot](images/Products.jpg)
+
+## 🧺 Cart
+![Cart Screenshot](images/Cart.jpg)
+
+## 💳 Checkout
+![Checkout Screenshot](images/Checkout.jpg)
+
+## 📦 Orders
+![Orders Screenshot](images/Orders.jpg)
+
+## 📦 Order Details
+![Orders Screenshot](images/OrderDetails.jpg)
+
+---
+
 ## Project Setup
 
 ### 1 Clone the repository
@@ -87,7 +107,7 @@ This seeds 50 sample products with random categories, prices, and inventory.
 | `/health`          | Health check endpoint |
 Access the app at `https://localhost:5001` or `http://localhost:5000`.
 
-
+---
 
 ## Environment Variables (optional)
 You can override the default connection string by setting the `ConnectionStrings__DefaultConnection` environment variable.

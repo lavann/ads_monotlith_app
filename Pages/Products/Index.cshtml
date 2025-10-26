@@ -21,11 +21,9 @@
                         <p class="card-text text-muted mb-2">@product.Category</p>
                         <h6 class="fw-semibold mb-3">@product.Price.ToString("C")</h6>
 
-                        <form method="post" asp-page-handler="Add" class="mt-auto">
-                            <input type="hidden" name="id" value="@product.Id" />
-                            <button type="submit" class="btn btn-primary w-100">
-                                Add to Cart
-                            </button>
+                        <form method="post" asp-page-handler="AddToCart">
+                            <input type="hidden" name="productId" value="@product.Id" />
+                            <button type="submit" class="btn btn-primary">Add to Cart</button>
                         </form>
                     </div>
                 </div>
@@ -33,33 +31,4 @@
         }
     </div>
 </div>
-
-@* <table class="table">
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-
-    <tbody>
-        @foreach (var product in Model.Products)
-        {
-            <tr>
-                <td>@product.Id</td>
-                <td>@product.Name</td>
-                <td>@product.Price.ToString("C")</td>
-                <td>
-                    <form method="post" asp-page-handler="AddToCart">
-                        <input type="hidden" name="productId" value="@product.Id" />
-                        <button type="submit" class="btn btn-primary">Add to Cart</button>
-                    </form>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table> *@
 <a class="btn btn-outline-secondary" href="/Cart">View Cart</a>
