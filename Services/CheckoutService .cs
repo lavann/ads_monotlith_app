@@ -18,7 +18,7 @@ namespace RetailMonolith.Services
             // 1) pull cart
             var cart = await _db.Carts
                 .Include(c => c.Lines)
-                .SingleOrDefaultAsync(c => c.CustomerId == customerId, ct)
+                .FirstOrDefaultAsync(c => c.CustomerId == customerId, ct)
                 ?? throw new InvalidOperationException("Cart not found");
 
             var total = cart.Lines.Sum(l => l.UnitPrice * l.Quantity);
