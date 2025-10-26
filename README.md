@@ -1,7 +1,7 @@
-# Retail Monolith App
+﻿# Retail Monolith App
 
 A lightweight ASP.NET Core 8 Razor Pages application that simulates a retail monolith before decomposition.  
-It includes product listing, shopping cart, checkout, and inventory management � built to demonstrate modernisation and refactoring patterns.
+It includes product listing, shopping cart, checkout, and inventory management — built to demonstrate modernisation and refactoring patterns.
 
 ---
 
@@ -13,16 +13,20 @@ It includes product listing, shopping cart, checkout, and inventory management �
   - `CartService`
   - `CheckoutService`
   - `MockPaymentGateway`
-- 50 sample seeded products with inventory
-- Minimal APIs for `/api/checkout` and `/api/orders/{id}`
-- Health check endpoint at `/health`
+- 50 sample seeded products with random inventory
+- End-to-end retail flow:
+  - Products → Cart → Checkout → Orders
+- Minimal APIs:
+  - `POST /api/checkout`
+  - `GET /api/orders/{id}`
+- Health-check endpoint at `/health`
 - Ready for decomposition into microservices
 
 ---
 
 ## Project Setup
 
-### 1? Clone the repository
+### 1 Clone the repository
 
 
 git clone https://github.com/lavann/ads_monotlith_app.git
@@ -34,10 +38,10 @@ cd ads_monotlith_app
 SQL Server LocalDB (comes with Visual Studio) or any SQL Server instance
 Ensure you have SQL Server LocalDB installed (comes with Visual Studio) or have access to any SQL Server instance.
 
-### 3? Restore dependencies
+### 3 Restore dependencies
 dotnet restore
 
-### 4? Update the database
+### 4 Update the database
 This project uses Entity Framework Core with a design-time factory for migrations.
 
 
@@ -48,28 +52,30 @@ dotnet ef database update
 
 ### Create a new migration
 
-If you modify models:
-dotnet ef migrations add <MigrationName>
-dotnet ef database update
-EF Core uses DesignTimeDbContextFactory (Data/DesignTimeDbContextFactory.cs)
+- If you modify models:
+	- `dotnet ef migrations add <MigrationName>`
+	- `dotnet ef database update`
+
+- EF Core uses DesignTimeDbContextFactory (Data/DesignTimeDbContextFactory.cs)
 with the connection string:
-Server=(localdb)\MSSQLLocalDB;Database=RetailMonolith;Trusted_Connection=True;MultipleActiveResultSets=true
+	- `Server=(localdb)\MSSQLLocalDB;Database=RetailMonolith;Trusted_Connection=True;MultipleActiveResultSets=true`
 
 ### Seeding Sample Data
 
-At startup, the app automatically runs:
-await AppDbContext.SeedAsync(db);
+- At startup, the app automatically runs:
+	- await AppDbContext.SeedAsync(db);
 
+	- 
 This seeds 50 sample products with random categories, prices, and inventory.
 
-To reseed manually
-dotnet ef database drop -f
-dotnet ef database update
-dotnet run
+- To reseed manually
+	- dotnet ef database drop -f
+	- dotnet ef database update
+	- dotnet run
 
 
 ## Run the application
-dotnet run
+- dotnet run
 
 | Path               | Description           |
 | ------------------ | --------------------- |
