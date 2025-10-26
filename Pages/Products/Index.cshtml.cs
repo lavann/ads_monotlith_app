@@ -31,13 +31,20 @@ namespace RetailMonolith.Pages.Products
 
             var cart = await _db.Carts
                 .Include(c => c.Lines)
-                .SingleOrDefaultAsync(c => c.CustomerId == "guest")
+                .FirstOrDefaultAsync(c => c.CustomerId == "guest")
                 ?? new Models.Cart { CustomerId = "guest" };
 
-            if(cart.Id == 0)
+            //if(cart.Id == 0)
+            //{
+            //    _db.Carts.Add(cart);
+            //};
+
+            if (cart is null)
             {
+                cart = new Models.Cart { CustomerId = "guest" };
                 _db.Carts.Add(cart);
-            };
+                await _db.SaveChangesAsync();
+            }
 
             cart.Lines.Add(new CartLine
             {

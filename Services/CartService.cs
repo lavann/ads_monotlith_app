@@ -70,6 +70,7 @@ namespace RetailMonolith.Services
             //get cart
             var cart = await _db.Carts
                 .Include(c => c.Lines)
+                .OrderBy(c => c.Id)
                 .FirstOrDefaultAsync(c => c.CustomerId == customerId, ct);
 
             //create cart if not found
