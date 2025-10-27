@@ -34,7 +34,7 @@ It includes product listing, shopping cart, checkout, and inventory management �
 ![Cart Screenshot](https://github.com/lavann/ads_monotlith_app/blob/main/Images/Cart.jpg)
 
 ## 💳 Checkout
-![Checkout Screenshot](https://github.com/lavann/ads_monotlith_app/blob/main/Images/Checkout.jpg)
+![Checkout Screenshot](https://github.com/lavann/ads_monotlith_app/blob/main/Images/CheckOut.jpg)
 
 ## 📦 Orders
 ![Orders Screenshot](https://github.com/lavann/ads_monotlith_app/blob/main/Images/Orders.jpg)
